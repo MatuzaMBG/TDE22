@@ -49,3 +49,23 @@ function limpar(){
     document.getElementById('num2').value = ''
     document.getElementById('result').innerHTML = 'Resultado:'
 }
+
+
+function media(){
+    const nt1 = Number(document.getElementById('nt1').value)
+    const nt2 = Number(document.getElementById('nt2').value)
+    const nt3 = Number(document.getElementById('nt3').value)
+    if (nt1 !='' && nt2!='' && nt3 !=''){
+        let resultado = nt1 + nt2 + nt3 / 3
+        document.getElementById('result2').innerHTML = 'Sua nota é:' + resultado
+    }else{
+        alert('Preencha os três campos')
+    }
+}
+
+function limpar(){
+    document.getElementById('nt1').value = ''
+    document.getElementById('nt2').value = ''
+    document.getElementById('nt3').value = ''
+    document.getElementById('result2').innerHTML = 'Sua nota é:'
+}
