@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TDE 22</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>TDE 22</h1>
     </header>
-    
-    
-    
+    <section>
+        <form>
+            <h1>Lista de Tarefas</h1>
+            <label for="tarefa">Nome da Tarefa:</label>
+            <input type="text" id="tarefa">
+            <button type="button" onclick="adicionar()">Adicionar</button>
+        </form>
+
+        <h1>Tarefas Pendentes</h1>
+        <ol id="pendentes">
+
+        </ol>
+    </section>
+
+    <section>
+        <h1>Tarefas Concluidas</h1>
+        <ol id="concluidas">
+
+        </ol>
+    </section>
+
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
